@@ -5,7 +5,7 @@ from . import views
 
 router = DefaultRouter()
 router.register('hello-view', views.HelloViewset, base_name='hello-view')
-
+router.register('profile',views.UserProfileViewset)
 #url for class based views
 
 urlpatterns = [
